@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{import}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{longtable}
+\usepackage{float} 
+\usepackage[compact]{titlesec}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{xcolor}
+\captionsetup[table]{position=above}
+\setstretch{1.2}
+\usepackage[backend=biber,style=apa]{biblatex}
+\addbibresource{references.bib}
+
+\newcommand{\question}[1]{\noindent\hspace{2em}\textbf{#1}}
+
+\pagestyle{fancy}
+\geometry{a4paper, margin=2.3cm}
+
+\fancyhf{}
+
+% Header
+\fancyhead[L]{\small EGH490  }
+\fancyhead[C]{\small QUT Microgrid Telemetry System}
+\fancyhead[R]{\small Dylan Hessing}
+
+% Footer
+\fancyfoot[L]{\small Faculty of Engineering}
+\fancyfoot[C]{\small\thepage}
+\fancyfoot[R]{\small\today}
+
+% Line thickness
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+% Define QUT blue
+\definecolor{qutblue}{RGB}{0, 92, 169}
+
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+
+\usepackage{fontspec}
+\setmainfont{Carlito} 
+
+
+\title{Literature Review}
+
+\author{Dylan Hessing}
+\begin{document}
+
+\begin{titlepage}
+    \centering
+
+    % Logo at top
+    \includegraphics[width=0.35\textwidth]{QUT.jpg}\par
+    \vspace{0.3cm}
+    
+    % Faculty and unit
+    {\large\color{qutblue}\textbf{Faculty of Engineering}\par}
+    {\normalsize Internal Design Document\par}
+    
+    \vspace{0.8cm}
+    \textcolor{qutblue}{\rule{\linewidth}{1mm}}\par
+    \vspace{0.5cm}
+
+    % Title
+    {\LARGE\bfseries STM32 Firmware Design for Distributed\\[0.3em]
+    Real-Time Telemetry System for QUT Microgrid\par}
+    \vspace{0.3cm}
+
+    \vspace{0.5cm}
+    \textcolor{qutblue}{\rule{\linewidth}{1mm}}\par
+    \vspace{0.8cm}
+
+    % Info table
+    \begin{tabular}{@{}ll@{}}
+        \textbf{Date:}             & \today                    \\[0.5em]
+        \textbf{Student Engineers:} & Dylan Hessing \& Ryan Bock             \\[0.5em]
+        \textbf{Student IDs:}       & n11245310                 \\[0.5em]
+        \textbf{Supervisor:}       & Assoc.\ Prof.\ Geoff Walker \\
+    \end{tabular}
+
+    \vfill
+
+    % Version history table
+    {\small\textbf{Version History}\par}
+    \vspace{0.3cm}
+    \begin{tabular}{|c|l|l|l|}
+        \hline
+        \textbf{Version} & \textbf{Date} & \textbf{Author} & \textbf{Changes / Comments} \\
+        \hline
+        1 & \today & Dylan Hessing & Initial Design \\
+        \hline
+    \end{tabular}
+
+\end{titlepage}
+\tableofcontents
+\newpage
+\input{sections/freeRTOSSelection.tex}
+\newpage
+
+\end{document}
