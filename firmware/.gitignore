@@ -1,0 +1,25 @@
+# CubeIDE build output
+Debug/
+Release/
+
+# Build artefacts
+*.o
+*.elf
+*.list
+*.map
+*.bin
+*.hex
+*.d
+*.su
+*.cyclo
+
+# CubeIDE metadata that shouldn't be committed
+.metadata/
+.recommenders/
+*.launch
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
