@@ -26,6 +26,7 @@
 #include "lwip.h"
 #include "ethernetif.h"
 #include "lwip/timeouts.h"
+#include "mqtt_client_app.h"
 extern struct netif gnetif;
 /* USER CODE END Includes */
 
@@ -109,7 +110,7 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN defaultTask */
   uint32_t led_tick = 0;
-
+  uint8_t mqtt_started = 0;
   for(;;)
   {
     /* Drive LwIP: read received packets, run timers, check link, handle DHCP */
@@ -121,7 +122,10 @@ void StartDefaultTask(void *argument)
 #if LWIP_DHCP
     DHCP_Periodic_Handle(&gnetif);
 #endif
-
+    if (!mqtt_started && netif_is_link_up(&gnetif)) {
+          mqtt_client_start();
+          mqtt_started = 1;
+    }
     /* LED heartbeat - non-blocking, ~1Hz */
     if (HAL_GetTick() - led_tick >= 500) {
         led_tick = HAL_GetTick();

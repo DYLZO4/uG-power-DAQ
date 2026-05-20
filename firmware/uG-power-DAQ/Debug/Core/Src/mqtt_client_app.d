@@ -1,16 +1,6 @@
-Core/Src/app_freertos.o: ../Core/Src/app_freertos.c \
- ../Core/Inc/app_freertos.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
- ../Core/Inc/FreeRTOSConfig.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portmacro.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portmacrocommon.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
- ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
- ../Core/Inc/main.h ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal.h \
+Core/Src/mqtt_client_app.o: ../Core/Src/mqtt_client_app.c \
+ ../Core/Inc/mqtt_client_app.h ../Core/Inc/main.h \
+ ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal.h \
  ../Core/Inc/stm32h5xx_hal_conf.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_rcc.h \
  ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal_def.h \
@@ -44,10 +34,8 @@ Core/Src/app_freertos.o: ../Core/Src/app_freertos.c \
  ../Drivers/BSP/STM32H5xx_Nucleo/stm32h5xx_nucleo.h \
  ../Core/Inc/stm32h5xx_nucleo_conf.h \
  ../Drivers/BSP/STM32H5xx_Nucleo/stm32h5xx_nucleo_errno.h \
- ../Middlewares/Third_Party/CMSIS/RTOS2/Include/cmsis_os2.h \
- ../Core/Inc/main.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/Middlewares/Third_Party/LwIP/app/lwip.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/netif.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/apps/mqtt.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/apps/mqtt_opts.h \
  C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/opt.h \
  C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/Middlewares/Third_Party/LwIP/target/lwipopts.h \
  C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/debug.h \
@@ -60,27 +48,9 @@ Core/Src/app_freertos.o: ../Core/Src/app_freertos.c \
  C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/ip4_addr.h \
  C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/ip6_addr.h \
  C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/def.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/pbuf.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/stats.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/mem.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/memp.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/priv/memp_std.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/priv/memp_priv.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/priv/mem_priv.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/Middlewares/Third_Party/LwIP/target/ethernetif.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/timeouts.h \
- ../Core/Inc/mqtt_client_app.h
-../Core/Inc/app_freertos.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
-../Core/Inc/FreeRTOSConfig.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
-../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portmacro.h:
-../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/portmacrocommon.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
-../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/prot/iana.h \
+ ../Middlewares/Third_Party/CMSIS/RTOS2/Include/cmsis_os2.h
+../Core/Inc/mqtt_client_app.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32H5xx_HAL_Driver/Inc/stm32h5xx_hal.h:
 ../Core/Inc/stm32h5xx_hal_conf.h:
@@ -116,10 +86,8 @@ Core/Src/app_freertos.o: ../Core/Src/app_freertos.c \
 ../Drivers/BSP/STM32H5xx_Nucleo/stm32h5xx_nucleo.h:
 ../Core/Inc/stm32h5xx_nucleo_conf.h:
 ../Drivers/BSP/STM32H5xx_Nucleo/stm32h5xx_nucleo_errno.h:
-../Middlewares/Third_Party/CMSIS/RTOS2/Include/cmsis_os2.h:
-../Core/Inc/main.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/Middlewares/Third_Party/LwIP/app/lwip.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/netif.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/apps/mqtt.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/apps/mqtt_opts.h:
 C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/opt.h:
 C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/Middlewares/Third_Party/LwIP/target/lwipopts.h:
 C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/debug.h:
@@ -132,13 +100,5 @@ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/def.h:
 C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/ip4_addr.h:
 C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/ip6_addr.h:
 C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/def.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/pbuf.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/stats.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/mem.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/memp.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/priv/memp_std.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/priv/memp_priv.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/priv/mem_priv.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/Middlewares/Third_Party/LwIP/target/ethernetif.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/timeouts.h:
-../Core/Inc/mqtt_client_app.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/prot/iana.h:
+../Middlewares/Third_Party/CMSIS/RTOS2/Include/cmsis_os2.h:

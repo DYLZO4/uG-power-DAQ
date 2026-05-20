@@ -1,0 +1,5 @@
+../Core/Src/mqtt_client_app.c:23:13:mqtt_connection_cb	2
+../Core/Src/mqtt_client_app.c:37:13:mqtt_pub_request_cb	2
+../Core/Src/mqtt_client_app.c:45:13:mqtt_do_connect	4
+../Core/Src/mqtt_client_app.c:67:13:mqtt_publish_task	4
+../Core/Src/mqtt_client_app.c:115:6:mqtt_client_start	1
