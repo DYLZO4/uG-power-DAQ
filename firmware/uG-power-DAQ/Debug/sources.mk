@@ -30,4 +30,15 @@ Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 \
 Middlewares/Third_Party/FreeRTOS/Source \
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure \
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang \
+lwip/app \
+lwip/target \
+src/api \
+src/apps/mqtt \
+src/core \
+src/core/ipv4 \
+src/core/ipv6 \
+src/netif \
+src/netif/ppp \
+src/netif/ppp/polarssl \
+system/OS \
 

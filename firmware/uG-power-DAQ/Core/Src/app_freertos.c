@@ -22,7 +22,11 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "main.h"
+#include "lwip.h"
+#include "ethernetif.h"
+#include "lwip/timeouts.h"
+extern struct netif gnetif;
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,7 +53,7 @@ osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
   .priority = (osPriority_t) osPriorityNormal,
-  .stack_size = 128 * 4
+  .stack_size = 4096 * 4
 };
 
 /* Private function prototypes -----------------------------------------------*/
@@ -64,7 +68,7 @@ const osThreadAttr_t defaultTask_attributes = {
   */
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
-
+#include "main.h"
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -104,11 +108,27 @@ void MX_FREERTOS_Init(void) {
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN defaultTask */
-  /* Infinite loop */
+  uint32_t led_tick = 0;
+
   for(;;)
   {
-	  HAL_GPIO_TogglePin(LED1_GPIO_PORT, LED1_PIN);
-	  osDelay(100);
+    /* Drive LwIP: read received packets, run timers, check link, handle DHCP */
+    ethernetif_input(&gnetif);
+    sys_check_timeouts();
+#if LWIP_NETIF_LINK_CALLBACK
+    Ethernet_Link_Periodic_Handle(&gnetif);
+#endif
+#if LWIP_DHCP
+    DHCP_Periodic_Handle(&gnetif);
+#endif
+
+    /* LED heartbeat - non-blocking, ~1Hz */
+    if (HAL_GetTick() - led_tick >= 500) {
+        led_tick = HAL_GetTick();
+        HAL_GPIO_TogglePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin);
+    }
+
+    osDelay(1);
   }
   /* USER CODE END defaultTask */
 }
