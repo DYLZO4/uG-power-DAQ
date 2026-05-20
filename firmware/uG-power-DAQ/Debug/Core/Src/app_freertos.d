@@ -46,29 +46,29 @@ Core/Src/app_freertos.o: ../Core/Src/app_freertos.c \
  ../Drivers/BSP/STM32H5xx_Nucleo/stm32h5xx_nucleo_errno.h \
  ../Middlewares/Third_Party/CMSIS/RTOS2/Include/cmsis_os2.h \
  ../Core/Inc/main.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/lwip/app/lwip.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/netif.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/opt.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/lwip/target/lwipopts.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/debug.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/arch.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/system/arch/cc.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/system/arch/cpu.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/err.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/ip_addr.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/def.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/ip4_addr.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/ip6_addr.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/def.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/pbuf.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/stats.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/mem.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/memp.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/priv/memp_std.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/priv/memp_priv.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/priv/mem_priv.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/lwip/target/ethernetif.h \
- C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/timeouts.h
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/Middlewares/Third_Party/LwIP/app/lwip.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/netif.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/opt.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/Middlewares/Third_Party/LwIP/target/lwipopts.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/debug.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/arch.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/system/arch/cc.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/system/arch/cpu.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/err.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/ip_addr.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/def.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/ip4_addr.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/ip6_addr.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/def.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/pbuf.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/stats.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/mem.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/memp.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/priv/memp_std.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/priv/memp_priv.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/priv/mem_priv.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/Middlewares/Third_Party/LwIP/target/ethernetif.h \
+ C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/timeouts.h
 ../Core/Inc/app_freertos.h:
 ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 ../Core/Inc/FreeRTOSConfig.h:
@@ -117,26 +117,26 @@ Core/Src/app_freertos.o: ../Core/Src/app_freertos.c \
 ../Drivers/BSP/STM32H5xx_Nucleo/stm32h5xx_nucleo_errno.h:
 ../Middlewares/Third_Party/CMSIS/RTOS2/Include/cmsis_os2.h:
 ../Core/Inc/main.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/lwip/app/lwip.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/netif.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/opt.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/lwip/target/lwipopts.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/debug.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/arch.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/system/arch/cc.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/system/arch/cpu.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/err.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/ip_addr.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/def.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/ip4_addr.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/ip6_addr.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/def.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/pbuf.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/stats.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/mem.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/memp.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/priv/memp_std.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/priv/memp_priv.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/priv/mem_priv.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/lwip/target/ethernetif.h:
-C:/Users/dylan/git/uG-power-DAQ/firmware2/uG-power-DAQ/src/include/lwip/timeouts.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/Middlewares/Third_Party/LwIP/app/lwip.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/netif.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/opt.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/Middlewares/Third_Party/LwIP/target/lwipopts.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/debug.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/arch.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/system/arch/cc.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/system/arch/cpu.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/err.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/ip_addr.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/def.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/ip4_addr.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/ip6_addr.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/def.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/pbuf.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/stats.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/mem.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/memp.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/priv/memp_std.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/priv/memp_priv.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/priv/mem_priv.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/Middlewares/Third_Party/LwIP/target/ethernetif.h:
+C:/Users/dylan/git/uG-power-DAQ/firmware/uG-power-DAQ/src/include/lwip/timeouts.h:

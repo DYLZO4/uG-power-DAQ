@@ -24,14 +24,15 @@ C_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Drivers/BSP/Components/lan8742 \
 Drivers/BSP/STM32H5xx_Nucleo \
 Drivers/STM32H5xx_HAL_Driver/Src \
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 \
 Middlewares/Third_Party/FreeRTOS/Source \
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure \
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang \
-lwip/app \
-lwip/target \
+Middlewares/Third_Party/LwIP/app \
+Middlewares/Third_Party/LwIP/target \
 src/api \
 src/apps/mqtt \
 src/core \

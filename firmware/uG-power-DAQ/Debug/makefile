@@ -18,14 +18,15 @@ RM := rm -rf
 -include src/core/subdir.mk
 -include src/apps/mqtt/subdir.mk
 -include src/api/subdir.mk
--include lwip/target/subdir.mk
--include lwip/app/subdir.mk
+-include Middlewares/Third_Party/LwIP/target/subdir.mk
+-include Middlewares/Third_Party/LwIP/app/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM33_NTZ/non_secure/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/subdir.mk
 -include Middlewares/Third_Party/FreeRTOS/Source/subdir.mk
 -include Drivers/STM32H5xx_HAL_Driver/Src/subdir.mk
 -include Drivers/BSP/STM32H5xx_Nucleo/subdir.mk
+-include Drivers/BSP/Components/lan8742/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include objects.mk
@@ -76,8 +77,8 @@ all: main-build
 main-build: uG-power-DAQ.elf secondary-outputs
 
 # Tool invocations
-uG-power-DAQ.elf uG-power-DAQ.map: $(OBJS) $(USER_OBJS) C:\Users\dylan\git\uG-power-DAQ\firmware2\uG-power-DAQ\STM32H563ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "uG-power-DAQ.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m33 -T"C:\Users\dylan\git\uG-power-DAQ\firmware2\uG-power-DAQ\STM32H563ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="uG-power-DAQ.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+uG-power-DAQ.elf uG-power-DAQ.map: $(OBJS) $(USER_OBJS) C:\Users\dylan\git\uG-power-DAQ\firmware\uG-power-DAQ\STM32H563ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "uG-power-DAQ.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m33 -T"C:\Users\dylan\git\uG-power-DAQ\firmware\uG-power-DAQ\STM32H563ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="uG-power-DAQ.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
